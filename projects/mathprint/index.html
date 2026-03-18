@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathPrint — Lasha Kandelaki</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1d232a;
+      color: #a6adba;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: #6419e6;
+      text-decoration: none;
+      margin-bottom: 30px;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: #7c3aed; }
+
+    .hero {
+      background: #2a323c;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #6419e6;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      color: #f5f5f5;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      color: #8b95a5;
+      margin-bottom: 20px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .tag {
+      background: #1d232a;
+      color: #a6adba;
+      padding: 5px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+
+    .section {
+      background: #2a323c;
+      border-radius: 16px;
+      padding: 30px 40px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #f5f5f5;
+      font-size: 1.3em;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #3d4451;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+
+    ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #6419e6;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .feature-card {
+      background: #1d232a;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .feature-card h3 {
+      color: #f5f5f5;
+      font-size: 1em;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 0.9em;
+      color: #8b95a5;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #3d4451;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #3d4451;
+    }
+
+    .current-work {
+      background: #1d232a;
+      border-left: 3px solid #f59e0b;
+      border-radius: 0 12px 12px 0;
+      padding: 16px 20px;
+      margin-top: 12px;
+      color: #f59e0b;
+      font-size: 0.95em;
+    }
+
+    .current-work strong {
+      color: #fbbf24;
+    }
+
+    .devices-note {
+      background: #1d232a;
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-top: 16px;
+      font-size: 0.9em;
+      color: #8b95a5;
+      text-align: center;
+    }
+
+    .status-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      background: #36d399;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .status-text {
+      color: #36d399;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding: 24px; }
+      .section { padding: 20px 24px; }
+      h1 { font-size: 1.6em; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/portfolio-/" class="back-link">← Back to Portfolio</a>
+
+    <div class="hero">
+      <span class="badge">In Development</span>
+      <h1>MathPrint</h1>
+      <p class="subtitle">Math worksheet generator for children — printable from any device</p>
+      <div class="status-bar">
+        <span class="status-dot"></span>
+        <span class="status-text">Actively in development</span>
+      </div>
+      <div class="tags">
+        <span class="tag">Unity</span>
+        <span class="tag">C#</span>
+        <span class="tag">Android</span>
+        <span class="tag">EdTech</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>About</h2>
+      <p>
+        An interactive math learning system for children. The core idea: automatically generate exercises
+        and print them from any device — phone, tablet, or computer.
+      </p>
+      <div class="current-work">
+        <strong>Currently working on:</strong> Print scene — generating formatted worksheets ready for printing directly from the device.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Core Components</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Generation Engine</h3>
+          <p>Creates math exercises (addition, subtraction, etc.) with configurable difficulty, result ranges, and negative numbers. Logic ensures correctness and balance.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Printable Output</h3>
+          <p>Generated tasks are ready to print from any device. Goal: instant worksheets for teachers and parents.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Android App</h3>
+          <p>Simple interface for generating exercises, choosing parameters, and getting instant results. Future expansion to other platforms.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Configurable Parameters</h3>
+          <p>Operation types, number ranges, 10–40 questions, multi-operand (2–5 numbers), missing operands (3 + ? = 8), comparison (>, <, =)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Key Ideas</h2>
+      <ul>
+        <li>Save time for teachers and parents</li>
+        <li>Adaptive, dynamic exercises tailored to each child</li>
+        <li>Print-first thinking — seamless transition from digital to physical</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>What Makes It Different</h2>
+      <ul>
+        <li>Not just an app — it's a generator + printable system</li>
+        <li>Focus on learning on paper, not on screen</li>
+        <li>Flexible logic — no fixed exercises, everything is dynamic</li>
+        <li>Result range validation to control output difficulty</li>
+        <li>Unique question generation (no duplicates)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <img src="screen1.png" alt="Missing operands - Huawei P40 Pro">
+        <img src="screen3.png" alt="Addition & subtraction exercises">
+        <img src="screen5.png" alt="All four operations">
+      </div>
+      <div class="screenshots" style="margin-top: 16px;">
+        <img src="screen2.png" alt="Number selector popup">
+        <img src="screen4.png" alt="Task ranges configuration">
+        <img src="screen7.png" alt="Samsung Galaxy Z Fold2">
+      </div>
+      <div class="devices-note">
+        Adaptive UI — tested on Huawei P40 Pro, Apple iPad 7th gen, Samsung Galaxy Z Fold2
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Adaptive UI</h2>
+      <p style="margin-bottom: 16px;">The interface adapts seamlessly to different screen sizes and devices:</p>
+      <div class="screenshots">
+        <img src="screen6.png" alt="Tablet view" style="max-width: 500px; margin: 0 auto; display: block;">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

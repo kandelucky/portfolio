@@ -11,6 +11,7 @@ import {
   FaDev,
   FaFacebook,
   FaGlobe,
+  FaGooglePlay,
   FaLinkedin,
   FaMastodon,
   FaReddit,
@@ -333,6 +334,14 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                       ? `http://${social.website}`
                       : social.website
                   }
+                />
+              )}
+              {social?.googlePlay && (
+                <ListItem
+                  icon={<FaGooglePlay />}
+                  title="Google Play:"
+                  value="Kandelucky_dev"
+                  link={social.googlePlay}
                 />
               )}
               {social?.telegram && (

@@ -153,6 +153,7 @@ const CONFIG = {
     discord: '',
     telegram: '',
     website: 'https://assetstore.unity.com/packages/tools/gui/adaptive-level-manager-307019',
+    googlePlay: 'https://play.google.com/store/apps/developer?id=Kandelucky_dev&hl=pl',
     phone: '',
     email: 'kandelakilasha@gmail.com',
   },

@@ -190,6 +190,11 @@ interface Social {
   website?: string;
 
   /**
+   * Google Play developer page URL
+   */
+  googlePlay?: string;
+
+  /**
    * Telegram username
    */
   telegram?: string;

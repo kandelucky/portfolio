@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTk Visual Builder — Lasha Kandelaki</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1d232a;
+      color: #a6adba;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: #6419e6;
+      text-decoration: none;
+      margin-bottom: 30px;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: #7c3aed; }
+
+    .hero {
+      background: #2a323c;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #6419e6;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      color: #f5f5f5;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      color: #8b95a5;
+      margin-bottom: 20px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .tag {
+      background: #1d232a;
+      color: #a6adba;
+      padding: 5px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+    }
+
+    .section {
+      background: #2a323c;
+      border-radius: 16px;
+      padding: 30px 40px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #f5f5f5;
+      font-size: 1.3em;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #3d4451;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+
+    ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: #6419e6;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .feature-card {
+      background: #1d232a;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .feature-card h3 {
+      color: #f5f5f5;
+      font-size: 1em;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 0.9em;
+      color: #8b95a5;
+    }
+
+    .status-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      background: #36d399;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .status-text {
+      color: #36d399;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .live-link {
+      display: inline-block;
+      background: #6419e6;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: background 0.2s;
+    }
+    .live-link:hover { background: #7c3aed; }
+
+    .hero-image {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #3d4451;
+      margin-top: 20px;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #3d4451;
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding: 24px; }
+      .section { padding: 20px 24px; }
+      h1 { font-size: 1.6em; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/portfolio/" class="back-link">&larr; Back to Portfolio</a>
+
+    <div class="hero">
+      <span class="badge">In Development</span>
+      <h1>CTk Visual Builder</h1>
+      <p class="subtitle">Desktop visual designer for CustomTkinter — drag, drop, edit live, export as Python</p>
+      <div class="status-bar">
+        <span class="status-dot"></span>
+        <span class="status-text">Actively in development — v0.0.12</span>
+      </div>
+      <div class="tags">
+        <span class="tag">Python 3.12+</span>
+        <span class="tag">CustomTkinter</span>
+        <span class="tag">Tkinter Canvas</span>
+        <span class="tag">Desktop App</span>
+        <span class="tag">Open Source</span>
+        <span class="tag">Qt Designer-style UX</span>
+      </div>
+      <a href="https://github.com/kandelucky/ctk_visual_builder" target="_blank" class="live-link">View on GitHub</a>
+      <img src="hero.png" alt="CTk Visual Builder — main workspace" class="hero-image">
+    </div>
+
+    <div class="section">
+      <h2>About</h2>
+      <p>
+        A desktop WYSIWYG designer for CustomTkinter. Drag widgets onto a canvas, edit their properties
+        live in an inspector panel, and export the result as clean runnable Python that renders identically.
+      </p>
+      <p style="margin-top: 12px;">
+        Built as a faithful clone of Qt Designer's classic workflow — palette on the left, canvas in the middle,
+        object tree and properties on the right. No hidden magic: what you see on the canvas is what the exported
+        <code>.py</code> produces.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Core Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Canvas + Editing</h3>
+          <p>Real CTk widgets rendered on a tk Canvas. Drag to move, 8-handle resize, arrow-key nudge, zoom, dot grid, pan.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Multi-document</h3>
+          <p>One <code>.ctkproj</code> holds a main window plus any number of dialogs, all visible on the same canvas with per-form chrome.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Layout Presets</h3>
+          <p>Qt Designer-style Vertical / Horizontal / Grid / Group layouts. Child properties collapse into a single <code>stretch</code> field.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Properties Panel v2</h3>
+          <p>Treeview backbone with drag-scrub number rows (Photoshop-style), live color picker with eyedropper, per-type editors.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Full Undo / Redo</h3>
+          <p>History panel with live stack view. Every mutation tracked — add, delete, move, resize, property change, rename, reparent.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Code Export</h3>
+          <p>One click generates a runnable <code>.py</code> file. Preview button spawns it in a subprocess — canvas matches exported output.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Inspectors</h3>
+          <p>Object Tree (F8) with drag-to-reparent, visibility/lock icons, multi-select. History panel (F9) with current-state marker.</p>
+        </div>
+        <div class="feature-card">
+          <h3>14+ Widgets</h3>
+          <p>CTkButton, Label, Frame, Entry, CheckBox, RadioButton, ComboBox, OptionMenu, Slider, ProgressBar, SegmentedButton, Switch, Textbox, Image.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Design Direction</h2>
+      <ul>
+        <li>Explicit Qt Designer (classic) clone — proven UX, not reinvention</li>
+        <li>Canvas = reality — no separate "preview mode"; WYSIWYG all the way to exported code</li>
+        <li>Modular architecture — <code>workspace.py</code> split into a 6-file package as the surface grew</li>
+        <li>Georgian keyboard fallback so shortcuts work regardless of active layout</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Role & Contribution</h2>
+      <ul>
+        <li>Solo developer — architecture, implementation, UX, icon tinting, exports</li>
+        <li>Spun off <code>ctk-tint-color-picker</code> as a standalone PyPI library (v0.3.1)</li>
+        <li>Wiki + per-widget documentation, architecture dashboard, usage guides</li>
+        <li>Active development since late 2025 — v0.0.6 through v0.0.12 to date</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <img src="screen1.png" alt="CTk Visual Builder v0.0.8">
+        <img src="screen2.png" alt="CTk Visual Builder v0.0.7">
+        <img src="screen3.png" alt="CTk Visual Builder v0.0.6">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Tech Stack</h2>
+      <ul>
+        <li>Python 3.12+ (tested on 3.14)</li>
+        <li>CustomTkinter 5.2.2+</li>
+        <li>Pillow — icon tinting, transparent PNGs</li>
+        <li>ctk-tint-color-picker — color picker dialog (separate PyPI package)</li>
+        <li>tkinter Canvas + ttk.Treeview for the inspector tables</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>

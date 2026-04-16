@@ -32,6 +32,12 @@ const CONFIG = {
       header: 'Current Projects',
       projects: [
         {
+          title: 'CTk Visual Builder',
+          description: 'Desktop visual designer for CustomTkinter — drag and drop widgets onto a canvas, edit properties live, export as runnable Python. Qt Designer-style workflow with multi-document canvas, full undo/redo, and WYSIWYG layout presets.',
+          imageUrl: '/portfolio/projects/ctk_visual_builder/hero.png',
+          link: '/portfolio/projects/ctk_visual_builder/',
+        },
+        {
           title: 'MathPrint',
           description: 'Math learning app for children — generates printable worksheets dynamically. Custom math engine with configurable operations, difficulty levels, missing operands, and comparison exercises. Built for parents and educators.',
           imageUrl: '/portfolio/projects/mathprint/icon.png',

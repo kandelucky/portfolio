@@ -19,8 +19,8 @@ const CONFIG = {
         sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: true, // Forked projects will not be displayed if set to true.
+          projects: ['kandelucky/awizo', 'kandelucky/ka-aq-test'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
@@ -32,10 +32,46 @@ const CONFIG = {
       header: 'Current Projects',
       projects: [
         {
-          title: 'CTk Visual Builder',
-          description: 'Desktop visual designer for CustomTkinter — drag and drop widgets onto a canvas, edit properties live, export as runnable Python. Qt Designer-style workflow with multi-document canvas, full undo/redo, and WYSIWYG layout presets.',
-          imageUrl: '/portfolio/projects/ctk_visual_builder/hero.png',
-          link: '/portfolio/projects/ctk_visual_builder/',
+          title: 'CTkMaker',
+          description: 'Visual UI designer for CustomTkinter — drag & drop widgets onto a canvas, edit properties live, export as runnable Python. Qt Designer-style workflow with multi-document canvas, full undo/redo, and WYSIWYG layout presets. Open-source on GitHub, with a community component hub.',
+          imageUrl: '/portfolio/projects/ctk_maker/hero.png',
+          link: 'https://github.com/kandelucky/ctk_maker',
+        },
+        {
+          title: 'Manoni',
+          description: 'Fast, lightweight photo browser, culler & editor built for lower-spec machines — batch filters, crop/resize, perspective and basic retouch, with a clean dark UI. Built with Python (Tkinter + Pillow).',
+          imageUrl: '/portfolio/projects/manoni/hero.jpg',
+          link: 'https://github.com/kandelucky/Manoni',
+        },
+        {
+          title: 'Matma-Robot',
+          description: 'Math game for children with a robot companion — levels from adding to 20 upwards, coins, stickers and a robot to look after. One offline HTML app in 10 languages, also packaged for Android (Capacitor). Plays in the browser.',
+          imageUrl: '/portfolio/projects/matma_robot/hero.png',
+          link: 'https://matma-robot.sallora.workers.dev/',
+        },
+        {
+          title: 'Todoister',
+          description: 'Free, open-source native Todoist client for Windows — fast, offline-first, in a real window (no browser, no Electron), with full two-way sync. Adds notebooks, a calendar view and a "Dragon buddy" companion.',
+          imageUrl: '/portfolio/projects/todoister/hero.png',
+          link: 'https://github.com/kandelucky/Todoister',
+        },
+        {
+          title: 'Zegar',
+          description: 'Clock-reading trainer for children, in Polish — drag the hands of an analog clock and see the time in words ("wpół do drugiej"). 6 short lessons, 10 practice levels and printable worksheets. Pure HTML/JS, runs in the browser.',
+          imageUrl: '/portfolio/projects/zegar/hero.png',
+          link: 'https://kandelucky.github.io/zegar/',
+        },
+        {
+          title: 'Czasownik',
+          description: 'Polish verb-form trainer for children — pick person, number, gender and tense and watch the verb change. Follows the school textbook lesson: 8 short lesson screens plus 4 exercise modes. No build step, works offline.',
+          imageUrl: '/portfolio/projects/czasownik/hero.png',
+          link: 'https://kandelucky.github.io/czasownik/',
+        },
+        {
+          title: 'CLAMA',
+          description: 'One-window graphics editor and collage tool for pins, posts and stories — text, shapes, images, templates, custom fonts, PNG/JPG export. Pure HTML/JS in the browser; projects stay on your computer.',
+          imageUrl: '/portfolio/projects/clama/hero.png',
+          link: 'https://kandelucky.github.io/clama/',
         },
         {
           title: 'MathPrint',
@@ -135,7 +171,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: '',
+    linkedin: 'lasha-kandelaki',
     x: '',
     mastodon: '',
     researchGate: '',

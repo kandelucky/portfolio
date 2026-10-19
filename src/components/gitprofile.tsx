@@ -239,6 +239,16 @@ const GitProfile = ({ config }: { config: Config }) => {
               </div>
               <div className="lg:col-span-2 col-span-1">
                 <div className="grid grid-cols-1 gap-6">
+                  {sanitizedConfig.projects.currentProjects.projects.length !== 0 && (
+                    <ExternalProjectCard
+                      loading={loading}
+                      header={sanitizedConfig.projects.currentProjects.header}
+                      externalProjects={
+                        sanitizedConfig.projects.currentProjects.projects
+                      }
+                      googleAnalyticId={sanitizedConfig.googleAnalytics.id}
+                    />
+                  )}
                   {sanitizedConfig.projects.github.display && (
                     <GithubProjectCard
                       header={sanitizedConfig.projects.github.header}
@@ -252,16 +262,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                     <PublicationCard
                       loading={loading}
                       publications={sanitizedConfig.publications}
-                    />
-                  )}
-                  {sanitizedConfig.projects.currentProjects.projects.length !== 0 && (
-                    <ExternalProjectCard
-                      loading={loading}
-                      header={sanitizedConfig.projects.currentProjects.header}
-                      externalProjects={
-                        sanitizedConfig.projects.currentProjects.projects
-                      }
-                      googleAnalyticId={sanitizedConfig.googleAnalytics.id}
                     />
                   )}
                   {sanitizedConfig.projects.external.projects.length !== 0 && (

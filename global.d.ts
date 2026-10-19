@@ -195,6 +195,11 @@ interface Social {
   googlePlay?: string;
 
   /**
+   * APKPure developer page URL
+   */
+  apkpure?: string;
+
+  /**
    * Telegram username
    */
   telegram?: string;

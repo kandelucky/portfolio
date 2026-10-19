@@ -196,6 +196,7 @@ const CONFIG = {
     telegram: '',
     website: 'https://assetstore.unity.com/packages/tools/gui/adaptive-level-manager-307019',
     googlePlay: 'https://play.google.com/store/apps/developer?id=Kandelucky_dev&hl=pl',
+    apkpure: 'https://apkpure.net/developer/Kandelucky_dev',
     phone: '',
     email: 'kandelakilasha@gmail.com',
   },

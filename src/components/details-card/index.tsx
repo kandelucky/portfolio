@@ -10,6 +10,7 @@ import {
   FaBuilding,
   FaDev,
   FaFacebook,
+  FaAndroid,
   FaGlobe,
   FaGooglePlay,
   FaLinkedin,
@@ -342,6 +343,14 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   title="Google Play:"
                   value="Kandelucky_dev"
                   link={social.googlePlay}
+                />
+              )}
+              {social?.apkpure && (
+                <ListItem
+                  icon={<FaAndroid />}
+                  title="APKPure:"
+                  value="Kandelucky_dev"
+                  link={social.apkpure}
                 />
               )}
               {social?.telegram && (

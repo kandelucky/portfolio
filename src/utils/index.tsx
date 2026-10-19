@@ -82,6 +82,7 @@ export const getSanitizedConfig = (
         stackoverflow: config?.social?.stackoverflow,
         website: config?.social?.website,
         googlePlay: config?.social?.googlePlay,
+        apkpure: config?.social?.apkpure,
         phone: config?.social?.phone,
         email: config?.social?.email,
         telegram: config?.social?.telegram,

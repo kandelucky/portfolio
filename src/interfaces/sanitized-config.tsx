@@ -61,6 +61,7 @@ export interface SanitizedSocial {
   stackoverflow?: string;
   website?: string;
   googlePlay?: string;
+  apkpure?: string;
   telegram?: string;
   phone?: string;
   email?: string;

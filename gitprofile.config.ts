@@ -32,12 +32,6 @@ const CONFIG = {
       header: 'Current Projects',
       projects: [
         {
-          title: 'Ants World',
-          description: 'Deep ant-colony simulator — every ant is its own agent with a role (nurse, builder, guard, forager). The colony digs its own nest of chambers, raises brood around the queen and reacts to moisture, air, crowding and disease, on the surface and underground. Pure HTML/JS, in development.',
-          imageUrl: '/portfolio/projects/ants_world/hero.jpg',
-          link: 'https://www.linkedin.com/in/lasha-kandelaki/',
-        },
-        {
           title: 'CTkMaker',
           description: 'Visual UI designer for CustomTkinter — drag & drop widgets onto a canvas, edit properties live, export as runnable Python. Qt Designer-style workflow with multi-document canvas, full undo/redo, and WYSIWYG layout presets. Open-source on GitHub, with a community component hub.',
           imageUrl: '/portfolio/projects/ctk_maker/hero.png',
@@ -90,6 +84,12 @@ const CONFIG = {
           description: 'Interactive educational puzzle system — children learn geography, language, and logical thinking through cipher-based puzzles. Printable cards + web app. Scalable across countries and languages.',
           imageUrl: '/portfolio/projects/codyssey/hero.png',
           link: '/portfolio/projects/codyssey/',
+        },
+        {
+          title: 'Ants World',
+          description: 'Deep ant-colony simulator — every ant is its own agent with a role (nurse, builder, guard, forager). The colony digs its own nest of chambers, raises brood around the queen and reacts to moisture, air, crowding and disease, on the surface and underground. Pure HTML/JS, in development.',
+          imageUrl: '/portfolio/projects/ants_world/hero.jpg',
+          link: 'https://www.linkedin.com/in/lasha-kandelaki/',
         },
       ],
     },
